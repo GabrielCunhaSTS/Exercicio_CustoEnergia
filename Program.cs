@@ -2,7 +2,7 @@
 
 Console.Write("Digite o tempo de uso diário do aparelho (em horas): ");
 
-while (!double.TryParse(Console.ReadLine(), out tempoUsoDiario) || tempoUsoDiario <= 0)
+while (!double.TryParse(Console.ReadLine()!, out tempoUsoDiario) || tempoUsoDiario <= 0)
     {
         Console.Write("Hora inválida. Digite a hora (positivo) para o tempo de uso diário: ");
     }
